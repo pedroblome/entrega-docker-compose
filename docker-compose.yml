@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  springboot-app:
+    build:
+      context: ./desafio-vaga
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+  react-app:
+    build:
+      context: ./desafio-front
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

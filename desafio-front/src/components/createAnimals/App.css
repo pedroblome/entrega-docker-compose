@@ -1,0 +1,48 @@
+.cadastrar-animal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cadastrar-animal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cadastrar-animal label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  
+  .cadastrar-animal input,
+  .cadastrar-animal select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .cadastrar-animal button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .cadastrar-animal button:hover {
+    background-color: #218838;
+  }
+  
+  .cadastrar-animal form-control {
+    width: 100%;
+
+  }
+  
+.datePicker .react-datepicker-wrapper,
+.datePicker .react-datepicker__input-container,
+.form-label {
+  width: 100%;
+}
